@@ -1,5 +1,7 @@
+// import Category model
 const { Category } = require('../models');
 
+// array of data for Category class
 const categoryData = [
   {
     category_name: 'Shirts',
@@ -18,6 +20,7 @@ const categoryData = [
   },
 ];
 
+// create and insert mulitple instances of Category using categoryData
 const seedCategories = () => Category.bulkCreate(categoryData);
 
 module.exports = seedCategories;

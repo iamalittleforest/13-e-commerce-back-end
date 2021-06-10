@@ -1,5 +1,7 @@
+// import Product model
 const { Product } = require('../models');
 
+// array of data for Product class
 const productData = [
   {
     product_name: 'Plain T-Shirt',
@@ -33,6 +35,7 @@ const productData = [
   },
 ];
 
+// create and insert mulitple instances of Product using productData
 const seedProducts = () => Product.bulkCreate(productData);
 
 module.exports = seedProducts;
