@@ -45,7 +45,7 @@ router.post('/', async(req, res) => {
   }
 });
 
-// PUT update a tag
+// UPDATE a tag
 router.put('/:id', async(req, res) => {
   try {
     const tagData = await Tag.update(req.body, {
