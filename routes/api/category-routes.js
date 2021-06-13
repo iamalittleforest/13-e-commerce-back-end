@@ -17,7 +17,7 @@ router.get('/', async(req, res) => {
   }
 });
 
-// GET a single category
+// GET single category by ID
 router.get('/:id', async(req, res) => {
   try {
     const categoryData = await Category.findByPk(req.params.id, {
@@ -35,7 +35,7 @@ router.get('/:id', async(req, res) => {
   }
 });
 
-// CREATE a category
+// CREATE new category
 router.post('/', async(req, res) => {
   try {
     const categoryData = await Category.create(req.body);
@@ -45,7 +45,7 @@ router.post('/', async(req, res) => {
   }
 });
 
-// UPDATE a category 
+// UPDATE category by ID
 router.put('/:id', async(req, res) => {
   try {
     const categoryData = await Category.update(req.body, {
@@ -65,7 +65,7 @@ router.put('/:id', async(req, res) => {
   }
 });
 
-// DELETE a category
+// DELETE category by ID
 router.delete('/:id', async(req, res) => {
   try {
     const categoryData = await Category.destroy({
