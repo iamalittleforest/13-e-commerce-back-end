@@ -1,4 +1,4 @@
-# 13 E-Commerce Back End
+# E-Commerce Back End
 
 ## Languages & Technologies
 * Javascript
@@ -11,7 +11,7 @@
 * Sequelize Package
 
 ## Description
-This application can be used as a back end for an e-commerce site.
+An application that can be used as a back end for an e-commerce site.
 
 ## Screenshot
 <img src="assets/images/README-screenshot.png" alt="screenshot">
